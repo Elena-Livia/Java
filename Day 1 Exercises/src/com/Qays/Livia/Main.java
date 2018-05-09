@@ -10,9 +10,9 @@ public class Main {
         System.out.println("Hello love ya ");
 
         Scanner reader = new Scanner(System.in);
-        System.out.println("enter a number Please");
+        System.out.println("enter a number between 10 and 0");
         for (int i = 0; i < 3; i++) {
-            int n = reader.nextInt(); // Scans the next token of the input as an int.
+            int n = reader.nextInt();
             myClassHateYaGuessMyNumber Game = new myClassHateYaGuessMyNumber();
 
             if(Game.guessMyNumber(n) == 0){
@@ -27,8 +27,10 @@ public class Main {
             }
 
         }
-        //once finished
-        reader.close();
+            myClassHateYaGuessMyNumber arr = new myClassHateYaGuessMyNumber();
+            arr.acceptAndReverse();
+
+
 
     }
 }
